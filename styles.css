@@ -329,7 +329,7 @@ img {
   flex-basis: 75%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 30px;
   margin: 10px 5%;
@@ -425,6 +425,10 @@ img {
   font-size: 1.8rem;
   font-weight: 300;
   margin-top: 10px;
+}
+
+#projects .project-info h2 a {
+  color: crimson;
 }
 
 #projects .project-info p {
@@ -806,6 +810,7 @@ img {
   #experiences .experiences-bottom .experience-item {
     flex-basis: 22%;
     margin: 1.5%;
+    height: 500px;
   }
   /* End Experiences Section */
 }
