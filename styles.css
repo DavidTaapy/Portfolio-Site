@@ -72,6 +72,16 @@ img {
   background-color: crimson;
 }
 
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.brand h1 span {
+  color: crimson;
+}
+
 /* Hero Section */
 
 #hero {
@@ -272,7 +282,7 @@ img {
 }
 
 #projects .project-image {
-  width: 100%;
+  flex-basis: 50%;
   height: 300px;
   overflow: hidden;
   position: relative;
@@ -414,6 +424,50 @@ img {
 
 /* End Of Contact Section */
 
+/* Footer Section */
+
+#footer {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#footer h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+#footer .social-item img {
+  filter: grayscale(1);
+  transition: 0.3s ease filter;
+}
+
+#footer .social-item img:hover {
+  filter: grayscale(0);
+}
+
+/* End Of Footer Section */
+
 /* Keyframes */
 
 @keyframes text_reveal_box {
@@ -441,3 +495,122 @@ img {
 }
 
 /* End Of Keyframes */
+
+/* Media Query For Tablet */
+
+@media only screen and (min-width: 768px) {
+  .cta {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+  }
+
+  h1.section-title {
+    font-size: 7rem;
+  }
+
+  /* Hero Section */
+  #hero h1 {
+    font-size: 7rem;
+  }
+
+  #hero .hero {
+    max-width: 1444px;
+  }
+  /* End Of Hero Section */
+
+  /* Experiences Section */
+  #experiences .experiences-bottom .experience-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  /* End Of Experiences Section */
+
+  /* Projects Section */
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: row;
+  }
+
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+
+  #projects .all-projects .project-image {
+    height: 100%;
+  }
+  /* End Of Projects Section */
+
+  /* About Section */
+  #about .about {
+    flex-direction: row;
+  }
+
+  #about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+
+  #about .about .col-left .about-image::after {
+    left: -45px;
+    top: 34px;
+    border: 10px solid crimson;
+  }
+
+  #about .col-right {
+    text-align: left;
+    padding: 30px;
+  }
+
+  #about .col-right h1 {
+    text-align: left;
+  }
+  /* End Of About Section */
+
+  /* Contact Section */
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0;
+  }
+
+  #contact .contact-item {
+    margin: 20px;
+    flex-direction: row;
+  }
+
+  #contact .contact-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  #contact .contact-item .icon img {
+    object-fit: contain;
+  }
+
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* End Of Contact Section */
+}
+
+/* End Of Media Query For Tablet */
