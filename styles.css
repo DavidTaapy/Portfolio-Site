@@ -382,8 +382,8 @@ img {
   padding: 100px 0;
 }
 
-#projects .projects-header {
-  align-items: center;
+#projects .section-title {
+  text-align: center;
 }
 
 #projects .projects-header h1 {
@@ -598,6 +598,7 @@ img {
   letter-spacing: 0.1rem;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #footer .social-icon {
