@@ -53,6 +53,25 @@ img {
   color: crimson;
 }
 
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: crimson;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-top: 30px;
+  transition: 0.4s ease;
+  transition-property: background-color, color;
+}
+
+.cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
 /* Hero Section */
 
 #hero {
@@ -124,25 +143,6 @@ img {
 
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
-}
-
-#hero .cta {
-  display: inline-block;
-  padding: 10px 30px;
-  color: crimson;
-  background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  margin-top: 30px;
-  transition: 0.4s ease;
-  transition-property: background-color, color;
-}
-
-#hero .cta:hover {
-  color: white;
-  background-color: crimson;
 }
 
 /* End Of Hero Section */
@@ -298,6 +298,121 @@ img {
 }
 
 /* End Of Projects Section */
+
+/* About Section */
+
+#about .about {
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#about .col-left {
+  width: 250px;
+  height: 360px;
+}
+
+#about .col-left .about-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 10px solid white;
+}
+
+#about .col-left .about-image::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: -33px;
+  height: 98%;
+  width: 98%;
+  border: 7px solid crimson;
+  z-index: -1;
+}
+
+#about .col-right {
+  width: 100%;
+}
+
+#about .col-right h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+
+#about .col-right p {
+  margin-bottom: 20px;
+}
+
+#about .col-right .cta {
+  color: black;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+/* End Of About Section */
+
+/* Contact Section */
+
+#contact .link {
+  display: block;
+  color: crimson;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#contact .contact {
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#contact .contact-items {
+  width: 400px;
+}
+
+#contact .contact-item {
+  width: 80%;
+  padding: 30px;
+  margin: 30px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  transition: 0.3s ease box-shadow;
+}
+
+#contact .contact-item:hover {
+  box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+/* End Of Contact Section */
 
 /* Keyframes */
 
