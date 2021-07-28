@@ -382,6 +382,10 @@ img {
   padding: 100px 0;
 }
 
+#projects .projects-header {
+  align-items: center;
+}
+
 #projects .projects-header h1 {
   margin-bottom: 50px;
 }
